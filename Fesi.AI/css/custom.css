@@ -157,7 +157,10 @@ button {
 #copyright #social-media a:hover i {
     color: #ffffff;
 }
-
+/* Over ons */
+.overons {
+    text-align: center;
+}
 /********** RWD **********/
 @media (max-width: 575px) {
     #banner h1 {
