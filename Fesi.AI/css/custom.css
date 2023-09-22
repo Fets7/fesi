@@ -41,7 +41,7 @@ button {
 
 .cta-green:hover {
     color: #ffffff;
-    background: #4840bb;
+    background: #216aff;
 }
 
 .cta-blue {
@@ -69,13 +69,13 @@ button {
 }
 
 /********** banner **********/
-#banner header {
+/* #banner header {
     overflow: hidden;
 }
 
 #banner header img {
     max-width: 80px;
-}
+} */
 
 /********** feature (skew background) **********/
 .feature img {
@@ -92,7 +92,10 @@ button {
     background: linear-gradient(to bottom, #7c7c7c 0%, #ffffff 100%);
 
 }
-
+#overons {
+    background: #9e9e9e;
+    background: linear-gradient(#ffffff 0%, #7c7c7c 100%);
+}
 /********** price table **********/
 #price-table {
     padding-top: 4rem !important;
