@@ -13,7 +13,10 @@ a,
 button {
     cursor: pointer;
 }
-
+.navbar {
+    float: right;
+    align-items: center;
+}
 .jumbotron {
     margin-bottom: 0 !important;
 }
