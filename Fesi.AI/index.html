@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- font-awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- navbar -->
+    <link rel="stylesheet" href="css/nav.css">
     
     <!-- AOS -->
     <link rel="stylesheet" href="css/aos.css">
@@ -22,27 +24,40 @@
     <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/banner-bk.png);">
         <!-- Navigatie -->
         <div class="container text-center text-md-left">
-            <div class="navbar">                     
+             
+            <!-- <div class="navbar">                     
                 <a href="#" class="text-white lead">Waarom AI?</a>
                 <a href="#" class="text-white lead">Over ons</a>
                 <a href="#" class="text-white lead">Contact</a>
-            </div>
+            </div> -->
             <header>
                 <!-- Logo -->
-                <img src="img/logotest.png" alt="logo"> 
+                <div class="navigatie">
+                    <img src="img/logotest.png" alt="logo"> 
+                    <ul class="nav-links">               
+                        <!-- <li><a href="#">Dashboard</a></li> -->
+                        <li class="center"><a href="#feature-first">Onze Diensten</a></li>
+                        <li class="center"><a href="#feature-last">Waarom AI?</a></li>
+                        <li class="center"><a href="#overons">Over ons</a></li>
+                        <li class="center"><a href="#contact">Contact</a></li>
+
+                      </ul> 
+                </div>
                 
             </header>
             <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
             	Versnel jouw<br>
             	Processen met AI
             </h1>
-            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+            <br>
+            <br>
+
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4" >
                 Blijf bij de tijd en implementeer net zoals andere<br>
                 bedrijven AI binnen jouw systeem
             </p>
             <a href="#contact" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Kom in contact</a>
             <a href="#feature-last" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Waarom AI?</a>
-<br>
         </div>
     </div>
     <!-- 3 blokken -->
@@ -73,7 +88,7 @@
         <div class="container my-5">
             <div class="row justify-content-between text-center text-md-left">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
-                    <h2 class="font-weight-bold">Onzen diensten</h2>
+                    <h2 class="font-weight-bold">Onze diensten</h2>
                     <p class="my-4">Wij helpen jou met het vernieuwen van de manier waarop jouw bedrijf contact heeft met de klant doormiddel van kunstmatige intelligentie (AI). Wij creëer op maat gemaakte chatbots op basis van jouw wensen en behoeftes. </p>
                     <a href="#contact" class="btn my-4 font-weight-bold atlas-cta cta-blue">Neem contact met ons op</a>
                 </div>
@@ -212,9 +227,9 @@
                     <a href="#" class="d-inline-block text-center ml-2">
                     	<i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
-                    <a href="#" class="d-inline-block text-center ml-2">
+                    <!-- <a href="#" class="d-inline-block text-center ml-2">
                     	<i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
+                    </a> -->
                     <a href="#" class="d-inline-block text-center ml-2">
                     	<i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
