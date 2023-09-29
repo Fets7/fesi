@@ -48,13 +48,17 @@ button {
 }
 
 .cta-blue {
-    background: #192440;
-    color: #ffffff;
+    /* background: #192440;
+    color: #ffffff; */
+    background: #ffffff;
+    color: #192440;
 }
 
 .cta-blue:hover {
+    /* color: #ffffff;
+    background: #121a2e; */
     color: #ffffff;
-    background: #121a2e;
+    background: #216aff;
 }
 
 .cta-ghost {
@@ -87,7 +91,9 @@ button {
 }
 
 #feature-first {
-    background: linear-gradient(168deg, #ffffff 55%, #7c7c7c 0);
+    /* background: linear-gradient(168deg, #ffffff 55%, #7c7c7c 0); */
+    background: linear-gradient(to top, #7c7c7c 0%, #ffffff 100%);
+
 }
 
 #feature-last {
