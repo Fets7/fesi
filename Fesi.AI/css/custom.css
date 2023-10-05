@@ -178,6 +178,9 @@ button {
     #banner h1 {
         font-size: 3.6rem;
     }
+    html, body {
+        overflow-x: hidden;
+    }
 }
 html {
     scroll-behavior: smooth;
