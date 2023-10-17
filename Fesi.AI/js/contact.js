@@ -1,6 +1,6 @@
     const form = document.querySelector("#form")
     const submitButton = document.querySelector("#submit")
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwyCQv-XG3_p7uypczqt-h6tyMoIrFF6KwuZRlJmnp3Agr8Q8aKRcWLdfzj4ylA3Si9/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz1B8_z21byBMmlh4hk7de64SfkuTLScoVqdywuyUhBMyXN05HRl27LAi_3oL3B6cNu/exec'
  
     form.addEventListener('submit', e => {
       submitButton.disabled = true
@@ -8,11 +8,12 @@
       let requestBody = new FormData(form)
       fetch(scriptURL, { method: 'POST', body: requestBody})
         .then(response => {
-           alert('Success!', response)
+           alert('De informatie is verzonden!', response)
+           window.location.reload();
            submitButton.disabled = false
           })
         .catch(error => {
-        alert('Error!', error.message)
+        alert('Er is iets misgegaan, probeer het opnieuw', error.message)
           submitButton.disabled = false
  
         }
