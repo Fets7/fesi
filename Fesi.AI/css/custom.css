@@ -180,7 +180,6 @@ button {
         font-size: 3.6rem;
     }
     #banner {
-        background-attachment: fixed;
         background-position: 25%;
     }
     html, body {
