@@ -60,7 +60,7 @@ button {
     /* color: #ffffff;
     background: #121a2e; */
     color: #ffffff;
-    background: #216aff;
+    background: #5e50ff;
 
 }
 
@@ -141,7 +141,7 @@ button {
 
 /********** copyright **********/
 #copyright {
-    background: #7c7c7c;
+    background: transparent;
     padding: 2rem 3rem;
 }
 
@@ -195,3 +195,4 @@ button {
 html {
     scroll-behavior: smooth;
 }
+

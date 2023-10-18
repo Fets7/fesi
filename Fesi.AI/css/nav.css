@@ -27,7 +27,6 @@
   left: 0;
   height: 3px;
   width: 0%;
-  /* background: #216aff; */
   background: linear-gradient(to right, #3a60ff 0%, #aa2fff 100%);
   border-radius: 12px;
   transition: all 0.4s ease;
@@ -58,8 +57,18 @@
   transform: scaleX(1);
   transform-origin: left;
 }
-/* @media (max-width: 575px) {
+@media (max-width: 575px) {
     .nav-links {
         display: none;
     }
-} */
+}
+
+
+
+
+
+
+
+
+
+
