@@ -1,4 +1,7 @@
 /********** common setting **********/
+body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
 .txtgrdnt {
             background: -webkit-linear-gradient(#3a60ff, #aa2fff);
             -webkit-background-clip: text;
