@@ -180,7 +180,8 @@ button {
         font-size: 3.6rem;
     }
     #banner {
-        background-position: 25%;
+        background-attachment: fixed;
+        /* background-position: 25%; */
     }
     html, body {
         overflow-x: hidden;
