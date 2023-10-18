@@ -76,7 +76,6 @@ button {
 
 #banner {
     background-size: cover;
-    background-attachment: fixed;
 }
 /********** feature (skew background) **********/
 .feature img {
@@ -180,8 +179,7 @@ button {
         font-size: 3.6rem;
     }
     #banner {
-        background-attachment: fixed;
-        /* background-position: 25%; */
+        background-position: 25%;
     }
     html, body {
         overflow-x: hidden;
