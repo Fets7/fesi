@@ -57,7 +57,7 @@
   transform: scaleX(1);
   transform-origin: left;
 }
-@media (max-width: 575px) {
+@media (max-width: 750px) {
     .nav-links {
         display: none;
     }

@@ -177,7 +177,7 @@ button {
     color: white;
 }
 /********** RWD **********/
-@media (max-width: 575px) {
+@media (max-width: 750px) {
     #banner h1 {
         font-size: 3.6rem;
     }
