@@ -1,5 +1,5 @@
 /* CSS voor mobiele weergave (bijv. schermgrootte kleiner dan 768px) */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   /* Verberg de standaard navigatielinks */
   .nav-links {
       display: none;
