@@ -1,11 +1,14 @@
 /********** common setting **********/
 body {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    font-family: 'sans-serif', sans-serif !important;
 }
 .txtgrdnt {
             background: -webkit-linear-gradient(#3a60ff, #aa2fff);
+            /* background: -webkit-linear-gradient(#3a60ff, #3a60ff); */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            
 }
 h2 {
     font-size: 2.8rem !important;
@@ -19,8 +22,9 @@ img {
     max-width: 100%;
 }
 video {
-    max-width: 70%;
+    max-width: 80%;
     float: left;
+    box-shadow: 0 0px 100px rgba(14, 38, 172, 0.2);
 }
 
 a,
@@ -215,6 +219,9 @@ button {
     .feature img {
         margin-left: auto!important;
         margin-right: auto!important;
+    }
+    html, video {
+        float: none;
     }
 }
 html {
