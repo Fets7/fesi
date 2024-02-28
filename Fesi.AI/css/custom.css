@@ -5,7 +5,6 @@ body {
 }
 .txtgrdnt {
             background: -webkit-linear-gradient(#3a60ff, #aa2fff);
-            /* background: -webkit-linear-gradient(#3a60ff, #3a60ff); */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             
@@ -24,8 +23,7 @@ img {
 video {
     max-width: 80%;
     float: left;
-    /* box-shadow: 0 0px 100px rgba(14, 38, 172, 0.2); */
-    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 100px rgba(8, 5, 187, 0.2);
 
 }
 
@@ -65,8 +63,7 @@ button {
 }
 
 .cta-blue {
-    /* background: #192440;
-    color: #ffffff; */
+
     background: #7c7c7c;
     color: #ffffff;
 }
@@ -95,38 +92,26 @@ button {
 /********** feature (skew background) **********/
 .feature img {
     margin-left: 0!important;
-    /* width: 65%; */
-    /* max-width: 600px; */
 }
 
 #feature-first {
     background: #ffffff;
-    /* background: linear-gradient(168deg, #ffffff 55%, #7c7c7c 0); */
-    /* background: linear-gradient(to top, #7c7c7c 0%, #ffffff 100%); */
 
 }
 #feature-first1 {
     background: #ffffff;
-    /* background-color: #cfcfcf; */
-    /* background: linear-gradient(168deg, #ffffff 55%, #7c7c7c 0); */
-    /* background: linear-gradient(to bottom, #cfcfcf 100%, #ffffff 0%); */
 
 }
 #feature-last {
     background: #ffffff;
-    /* background: #cfcfcf; */
-    /* background: linear-gradient(to bottom, #ffffff 0%, #cfcfcf  100%); */
 
 }
 #feature-last1 {
     background: #ffffff;
-    /* background-color: #cfcfcf; */
 }
 
 #onzeMissie {
     background: #ffffff;
-    /* background: #9e9e9e; */
-    /* background: linear-gradient(#cfcfcf 0%, #ffffff 100%); */
 }
 /********** price table **********/
 #price-table {
