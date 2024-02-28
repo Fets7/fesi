@@ -226,6 +226,16 @@ button {
         float: none;
     }
 }
+@media (max-width: 767px) {
+    video.mx-auto.d-block {
+        display: none !important;
+    }
+}
+@media (min-width: 767px) {
+    img.mx-auto.d-block1 {
+        display: none !important;
+    }
+}
 html {
     scroll-behavior: smooth;
 }
