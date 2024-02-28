@@ -24,7 +24,9 @@ img {
 video {
     max-width: 80%;
     float: left;
-    box-shadow: 0 0px 100px rgba(14, 38, 172, 0.2);
+    /* box-shadow: 0 0px 100px rgba(14, 38, 172, 0.2); */
+    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
+
 }
 
 a,
