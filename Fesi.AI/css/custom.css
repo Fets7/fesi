@@ -4,11 +4,11 @@ body {
     font-family: 'sans-serif', sans-serif !important;
 }
 .txtgrdnt {
-            background: -webkit-linear-gradient(#3a60ff, #aa2fff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            
+    background: -webkit-linear-gradient(#2900f5, #2900f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 h2 {
     font-size: 2.8rem !important;
     font-weight: 700;
@@ -23,8 +23,12 @@ img {
 video {
     max-width: 80%;
     float: left;
-    box-shadow: 0 0px 100px rgba(8, 5, 187, 0.2);
+    /* box-shadow: 0 0px 100px rgba(8, 5, 187, 0.2); */
 
+}
+.logo {
+    height: 38%;
+    width: 38%;
 }
 
 a,
@@ -58,7 +62,7 @@ button {
 
 .cta-green:hover {
     color: #ffffff;
-    background: #5e50ff;
+    background: #2900f5;
 
 }
 
@@ -72,7 +76,7 @@ button {
     /* color: #ffffff;
     background: #121a2e; */
     color: #ffffff;
-    background: #5e50ff;
+    background: #2900f5;
 
 }
 
@@ -96,7 +100,6 @@ button {
 
 #feature-first {
     background: #ffffff;
-
 }
 #feature-first1 {
     background: #ffffff;
@@ -200,7 +203,7 @@ button {
         max-width: 100%;
         max-height: 100%;
         display: block;
-        margin-left: auto;
+        /* margin-left: auto; */
         margin-right: auto;
     }
     .feature img {
@@ -214,6 +217,13 @@ button {
 @media (max-width: 767px) {
     video.mx-auto.d-block {
         display: none !important;
+    }
+    .logo {
+        height: auto;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media (min-width: 767px) {
