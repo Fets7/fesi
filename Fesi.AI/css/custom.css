@@ -91,7 +91,7 @@ button {
 }
 
 #banner {
-    background-size: cover;
+    background-size: cover !important; 
 }
 /********** feature (skew background) **********/
 .feature img {
