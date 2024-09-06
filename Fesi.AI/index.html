@@ -16,14 +16,41 @@
     <link rel="stylesheet" href="css/nav.css">
     <!-- AOS -->
     <link rel="stylesheet" href="css/aos.css">
-    <script type='text/javascript'>
-        window.smartlook||(function(d) {
-          var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-          var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-          c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-          })(document);
-          smartlook('init', '30eec2c96973f17a689b382a42fa9172ca3fb748', { region: 'eu' });
-      </script>
+    
+<div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+    <!-- Here is where Voiceglow renders the widget. -->
+    <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+</div>
+
+<!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
+<script defer>
+    (function() {
+        window.VG_CONFIG = {
+            ID: "x9vyo9xf8igfvtwl", // YOUR AGENT ID
+            region: 'eu', // YOUR ACCOUNT REGION 
+            render: 'bottom-right', // can be 'full-width' or 'bottom-left' or 'bottom-right'
+            stylesheets: [
+                // Base Voiceglow CSS
+                "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+                // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+            ],
+            // Optional user data -- start
+            // user: {
+            //     name: 'John Doe', // User's name
+            //     email: 'johndoe@gmail.com', // User's email
+            //     phone: '+1234567890', // User's phone number
+            // }
+            // Optional user data -- end
+            // **
+            // userID: 'USER_ID', // If you want to use your own user_id
+            // autostart: true, // Whether to autostart the chatbot with the proactive message
+        }
+        var VG_SCRIPT = document.createElement("script");
+        VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+        VG_SCRIPT.defer = true; // Remove 'defer' if you want widget to load faster (Will affect website loading)
+        document.body.appendChild(VG_SCRIPT);
+    })()
+</script>
 </head>
 <body>
 	<script type="text/javascript">
