@@ -1,20 +1,26 @@
 /********** common setting **********/
 body {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-    font-family: 'sans-serif', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #eceefe;
 }
 .txtgrdnt {
     background: -webkit-linear-gradient(#2900f5, #2900f5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+h1 {
+    font-size: 2.5rem !important;
+    font-weight: 900 !important;
+}
 h2 {
-    font-size: 2.8rem !important;
-    font-weight: 700;
+    font-size: 2rem !important;
+    font-weight: 900;
 }
 h3{  
-    color: #ffffff !important;
+    font-size: 1.5rem !important;
+    font-weight: 900;
+    /* color: #ffffff !important; */
 }
 img {
     display: block;
@@ -56,19 +62,19 @@ button {
 }
 
 .cta-green {
-    background: #ffffff;
-    color: #192440;
+    background: #2900f5;
+    color: #ffffff;
 }
 
 .cta-green:hover {
     color: #ffffff;
-    background: #2900f5;
+    background: #031684;
 
 }
 
 .cta-blue {
 
-    background: #7c7c7c;
+    background: #2900f5;
     color: #ffffff;
 }
 
@@ -89,6 +95,19 @@ button {
     color: #ffffff;
     background: #121a2e;
 }
+.arrow-container {
+    position: relative;
+    text-align: left; /* Zorgt voor centrering */
+    margin-top: 0px;  /* Ruimte boven de pijl */
+}
+
+.arrow {
+    width: 250px; /* Pas de grootte van de pijl aan */
+    height: auto;
+    position: absolute;
+    left: 12%; /* Pijl centreren */
+}
+
 
 #banner {
     background-size: cover !important; 
@@ -135,8 +154,6 @@ button {
 #contact {
     background-size: cover;
     background-color: #7c7c7c; 
-    border-top-right-radius: 10em;
-    box-shadow: 10px 10px 10px #333;
 }
 
 #contact ul li {
@@ -150,8 +167,8 @@ button {
 #contact form input,
 #contact form textarea {
     background: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
 }
 
 /********** copyright **********/
@@ -164,12 +181,12 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 99%;
-    background: #ffffff;
+    background: #2900f5;
     transition: .4s ease;
 }
 
 #copyright #social-media a i {
-    color: #192440;
+    color: #ffffff;
     font-size: 1.2rem;
     line-height: 40px;
 }
@@ -186,8 +203,181 @@ button {
     text-align: center;
 }
 .lnk {
+    color: rgb(0, 0, 0);
+}
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+.checklist li {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+.checklist li::before {
+    content: '✔';
+    color: #2900f5;
+    margin-right: 10px;
+}
+.cta {
+    text-align: left;
+}
+
+.cta form {
+    display: inline-flex;
+    align-items: center;
+    border: 3px solid #2900f5; /* Blauwe rand */
+    border-radius: 50px; /* Ovale vorm */
+    overflow: hidden;
+}
+
+.cta input[type="email"] {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+}
+
+.cta button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #2900f5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: darkblue;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.cta p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+    text-align: left;
+    margin-left: 20px; /* Pas dit aan voor de gewenste afstand */
+}
+
+.use-cases {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.use-case-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.use-case-card {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateY(-5px);
+}
+
+.use-case-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.use-case-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.use-case-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+.solution-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 150px auto 0;
+}
+
+.solution-block {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #2D2EFF, #5A5CFF);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.solution-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.solution-block i {
+    font-size: 40px;
+    margin-bottom: 10px;
     color: white;
 }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.solution-block {
+    animation: fadeInUp 0.5s ease-out;
+}
+
 /********** RWD **********/
 @media (max-width: 1000px) {
     #banner h1 {
@@ -234,4 +424,6 @@ button {
 html {
     scroll-behavior: smooth;
 }
+
+
 
