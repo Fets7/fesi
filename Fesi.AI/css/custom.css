@@ -108,9 +108,27 @@ button {
     left: 12%; /* Pijl centreren */
 }
 
+.dropdown-arrow {
+    font-size: 0.8em;  /* Kleinere grootte */
+    color: #555;      /* Lichtere kleur voor subtiel effect */
+    margin-left: 5px;  /* Ruimte tussen tekst en pijltje */
+    transition: color 0.3s ease;  /* Zachte overgang voor kleurverandering */
+}
+
+.dropdown:hover .dropdown-arrow {
+    color: #333;  /* Donkere kleur bij hover */
+}
+
 
 #banner {
     background-size: cover !important; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: auto; /* Zorgt ervoor dat de hoogte alleen zo groot is als de inhoud */
+    width: 100%;
+    padding: 50px 0; /* Voegt wat ruimte toe binnen de div, pas aan indien nodig */
+    margin-bottom: 40px;
 }
 /********** feature (skew background) **********/
 .feature img {
@@ -154,6 +172,7 @@ button {
 #contact {
     background-size: cover;
     background-color: #7c7c7c; 
+    margin-top: 10rem;
 }
 
 #contact ul li {
@@ -297,14 +316,26 @@ button {
     margin-bottom: 40px;
 }
 
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Zorgt ervoor dat de kaarten in het midden staan */
+    overflow: hidden; /* Verberg de horizontale scrollbalk */
+}
+
 .use-case-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center; /* Zorgt ervoor dat de kaarten in het midden staan */
+    transition: transform 0.3s ease; /* Animatie voor het scrollen */
+    gap: 20px; /* Ruimte tussen de kaarten */
 }
 
 .use-case-card {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column; /* Inhoud verticaal centreren */
+    justify-content: space-between; /* Ruimte tussen de elementen */
     width: 300px;
     padding: 20px;
     border: 2px solid #000;
@@ -312,6 +343,7 @@ button {
     text-align: center;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin: 2%;
 }
 
 .use-case-card:hover {
@@ -326,6 +358,8 @@ button {
 
 .use-case-card img {
     max-width: 100%;
+    height: 200px; /* Vaste hoogte voor de afbeeldingen */
+    object-fit: cover; /* Afbeelding bijsnijden om te passen */
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -334,39 +368,28 @@ button {
     font-size: 14px;
     line-height: 1.5;
     color: #333;
-}
-.solution-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 150px auto 0;
+    flex-grow: 1; /* Zorgt ervoor dat de paragrafen zich uitstrekken om de kaarten gelijkmatig te maken */
 }
 
-.solution-block {
-    flex: 1;
-    min-width: 250px;
-    padding: 20px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #2D2EFF, #5A5CFF);
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: all 0.3s ease-in-out;
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: #2900f5;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Verhoog de z-index om ervoor te zorgen dat de knop bovenaan ligt */
+    display: none; /* Verberg de knop standaard */
 }
 
-.solution-block:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+.slider-button.left {
+    left: 10px; /* Zorg ervoor dat de knop niet helemaal aan de rand zit */
 }
 
-.solution-block i {
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: white;
+.slider-button.right {
+    right: 10px; /* Zorg ervoor dat de knop niet helemaal aan de rand zit */
 }
 
 @keyframes fadeInUp {
@@ -416,11 +439,11 @@ button {
         margin-right: auto;
     }
 }
-@media (min-width: 767px) {
+/* @media (min-width: 767px) {
     img.mx-auto.d-block1 {
         display: none !important;
     }
-}
+} */
 html {
     scroll-behavior: smooth;
 }
