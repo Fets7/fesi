@@ -1,273 +1,371 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
+  
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>Fesi-AI</title>
+    <title>
+      Fesi-AI
+    </title>
     <meta name="description" content="Fesi.AI revolutionizes e-commerce by boosting sales with personalized advice and support, enhancing operational efficiency through automation, and eliminating waiting times for optimal customer satisfaction.">
     <link rel="icon" href="img/LogoWithoutText.png" sizes="32x32" type="image/png">
     <!-- custom.css -->
     <link rel="stylesheet" href="css/custom.css">
     <!-- bootstrap.min.css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- font-awesome -->
+    <!-- font-awesome -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- navbar -->
     <link rel="stylesheet" href="css/nav.css">
     <!-- AOS -->
     <link rel="stylesheet" href="css/aos.css">
-</head>
-<body>
+  </head>
+  
+  <body>
     <!-- banner -->
-    <div class="jumbotron jumbotron-fluid" id="banner" 
-    style="background-image: url(img/graphic.svg);
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/graphic.svg);
     background-repeat: no-repeat;">
-    <!-- <div class="jumbotron jumbotron-fluid" id="banner" > -->
-        
-        <!-- Navigatie -->
-        <div class="container text-center text-md-left">
-            <header>
-                <!-- Logo -->                              
-                <div data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="navigatie">
-                    <img class="logo" src="img/Fesi Logo Full.png" alt="logo"> 
-                    <ul class="nav-links">
-                        <li class="center"><a href="index.html">Home</a></li>
-                        <li class="center dropdown">
-                            <a href="oplossingen.html">Oplossingen <i class="fa fa-chevron-down dropdown-arrow"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="klantenservice.html">Klantenservice</a></li>
-                                <li><a href="verkoop.html">Verkoop</a></li>
-                                <li><a href="marketing.html">Marketing</a></li>
-                            </ul>
-                        </li>
-                        <li class="center"><a href="onze_missie.html">Onze Missie</a></li>
-                        <li class="center"><a href="#contact">Contact</a></li>
-                    </ul>
-                    
-                    
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                
-            </header>
+      <!-- <div class="jumbotron jumbotron-fluid" id="banner"> -->
+      <!-- Navigatie -->
+      <div class="container text-center text-md-left">
+        <header>
+            <div class="navigatie">
+              <img class="logo" src="img/Fesi Logo Full.png" alt="logo">
+              
+              <!-- Normale navigatie (voor desktop) -->
+              <ul class="nav-links">
+                <li class="center"><a href="index.html">Home</a></li>
+                <li class="center dropdown">
+                  <a href="#">Oplossingen <i class="fa fa-chevron-down dropdown-arrow"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="klantenservice.html">Klantenservice</a></li>
+                    <li><a href="verkoop.html">Verkoop</a></li>
+                    <li><a href="marketing.html">Marketing</a></li>
+                  </ul>
+                </li>
+                <li class="center"><a href="onze_missie.html">Onze Missie</a></li>
+                <li class="center"><a href="#contact">Contact</a></li>
+              </ul>
+          
+              <!-- Hamburger menu (alleen mobiel) -->
+              <div class="hamburger" onclick="toggleMenu()">☰</div>
+            </div>
+          </header>
+          
+          <!-- Overlay Menu (alleen mobiel) -->
+          <div id="overlay">
+            <!-- <img class="logo" src="img/Fesi Logo Full.png" alt="logo"> -->
+            <ul class="overlay-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="klantenservice.html">Klantenservice</a></li>
+              <li><a href="verkoop.html">Verkoop</a></li>
+              <li><a href="marketing.html">Marketing</a></li>
+              <li><a href="onze_missie.html">Onze Missie</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="close-btn" onclick="toggleMenu()">×</div>
+          </div>
+        <br>
+        <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000"
+        data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
+          Jouw klantenservice en sales in een handomdraai
+          <!-- onze <span class="txtgrdnt"> AI</span> oplossingen -->
+        </h1>
+        <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
+        class="lead text-white my-4">
+          <h3 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000"
+          data-aos-once="true" style="color: #000000 !important; font-weight: bold;">
+            <b>
+              Een Ai chatbot die uw assortiment
+              <br>
+              kent en persoonlijk advies geeft
+            </b>
             <br>
-            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
-                Jouw klantenservice en sales in een handomdraai
-            	<!-- onze <span class="txtgrdnt"> AI</span> oplossingen -->
-            </h1>
-            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4" >
-                <h3 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" style="color: #000000 !important; font-weight: bold;"><b>Een Ai chatbot die uw assortiment<br> kent en persoonlijk advies geeft 
-                </b> <br><br>
-                <ul class="checklist">
-                    <li style="font-weight: bold;">ROI binnen een jaar</li>
-                    <li style="font-weight: bold;">Nieuwste AI modellen</li>
-                    <li style="font-weight: bold;">Geoptimaliseerd voor conversie</li>     
-                    <br>
-                    <div data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="cta">
-                        <form action="#">
-                            <input type="email" placeholder="Vul jouw email adres in" required>
-                            <button type="submit">Nu beginnen</button>
-                        </form>
-                        <a href="#">Zo werkt het</a>
-                        <p>Vul je e-mailadres in en ontvang een gratis demo</p>
-                    </div>
-                    <div class="arrow-container">
-                        <!-- <img src="img/arrow.svg" alt="Pijl" class="arrow"> -->
-                    </div>
-                    <br>
-                <br>
-        </div>
+            <br>
+            <ul class="checklist">
+              <li style="font-weight: bold;">
+                ROI binnen een jaar
+              </li>
+              <li style="font-weight: bold;">
+                Nieuwste AI modellen
+              </li>
+              <li style="font-weight: bold;">
+                Geoptimaliseerd voor conversie
+              </li>
+              <br>
+              <div data-aos="fade" data-aos-easing="linear" data-aos-duration="1000"
+              data-aos-once="true" class="cta">
+                <form action="#">
+                  <input type="email" placeholder="Vul jouw email adres in" required>
+                  <button type="submit">
+                    Nu beginnen
+                  </button>
+                </form>
+                <a href="#">
+                  Zo werkt het
+                </a>
+                <p>
+                  Vul je e-mailadres in en ontvang een gratis demo
+                </p>
+              </div>
+              <div class="arrow-container">
+                <!-- <img src="img/arrow.svg" alt="Pijl" class="arrow"> -->
+              </div>
+              <br>
+              <br>
+      </div>
     </div>
-
     <div class="jumbotron jumbotron-fluid feature" id="feature-last">
-        <div class="container">
-            <div class="row justify-content-between text-center text-md-left">
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
-                    <h2 class="font-weight-bold">Klantenservice automatisering</h2>
-                    <p class="my-4">
-                        <b>Altijd snelle en hoogwaardige service</b> <br> <br>
-
-                        Een AI-chatbot biedt directe, nauwkeurige en persoonlijke antwoorden, 24/7 bereikbaar voor optimale klanttevredenheid. 
-                        Geen wachttijden, altijd heldere informatie en een efficiënte service die bijdraagt aan loyaliteit en bereik.
-                        </p>
-                    <a href="https://calendly.com/fesi-demo/demo" class="btn my-4 font-weight-bold atlas-cta cta-blue" target="_blank">Ontdek de mogelijkheden</a>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
-                    <img src="img/artificial-intelligence-2-37.svg" alt="Safe and reliable" style="width: 350px; height: auto;" class="mx-auto d-block1">               
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-between text-center text-md-left">
+          <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"
+          class="col-md-6 flex-md-last">
+            <h2 class="font-weight-bold">
+              Klantenservice automatisering
+            </h2>
+            <p class="my-4">
+              <b>
+                Altijd snelle en hoogwaardige service
+              </b>
+              <br>
+              <br>
+              Een AI-chatbot biedt directe, nauwkeurige en persoonlijke antwoorden,
+              24/7 bereikbaar voor optimale klanttevredenheid. Geen wachttijden, altijd
+              heldere informatie en een efficiënte service die bijdraagt aan loyaliteit
+              en bereik.
+            </p>
+            <a href="https://calendly.com/fesi-demo/demo" class="btn my-4 font-weight-bold atlas-cta cta-blue"
+            target="_blank">
+              Ontdek de mogelijkheden
+            </a>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"
+          class="col-md-6 align-self-center flex-md-first">
+            <img src="img/artificial-intelligence-2-37.svg" alt="Safe and reliable"
+            style="width: 350px; height: auto;" class="mx-auto d-block1">
+          </div>
         </div>
+      </div>
     </div>
-    
-
     <div class="jumbotron jumbotron-fluid feature" id="feature-first1">
-        <div class="container my-5">
-            <div class="row justify-content-between text-center text-md-left">
-                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
-                    <h2 class="font-weight-bold">Verhoog Verkoop</h2>
-                    <p class="my-4">
-                        <b>Meer omzet en slimme verkoop</b> <br><br>
-                        
-                        Een AI-chatbot biedt gepersonaliseerd advies, slimme productaanbevelingen en effectieve cross-selling. 
-                        Door klantvoorkeuren te analyseren, vergroot AI de conversiekansen, 
-                        verhoogt de orderwaarde en versterkt het klantvertrouwen – voor een slimme en winstgevende verkoopstrategie.
-    
-                         </p><br>
-                        <a href="https://calendly.com/fesi-demo/demo" class="btn my-4 font-weight-bold atlas-cta cta-blue" target="_blank">Book a call</a>
-                    </div>
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
-                    <img src="img/transaction-28.svg" alt="Safe and reliable" style="width: 350px; height: auto; float: right;" class="mx-auto d-block1">
-                </div>
-            </div>
+      <div class="container my-5">
+        <div class="row justify-content-between text-center text-md-left">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"
+          class="col-md-6">
+            <h2 class="font-weight-bold">
+              Verhoog Verkoop
+            </h2>
+            <p class="my-4">
+              <b>
+                Meer omzet en slimme verkoop
+              </b>
+              <br>
+              <br>
+              Een AI-chatbot biedt gepersonaliseerd advies, slimme productaanbevelingen
+              en effectieve cross-selling. Door klantvoorkeuren te analyseren, vergroot
+              AI de conversiekansen, verhoogt de orderwaarde en versterkt het klantvertrouwen
+              – voor een slimme en winstgevende verkoopstrategie.
+            </p>
+            <br>
+            <a href="https://calendly.com/fesi-demo/demo" class="btn my-4 font-weight-bold atlas-cta cta-blue"
+            target="_blank">
+              Book a call
+            </a>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"
+          class="col-md-6 align-self-center">
+            <img src="img/transaction-28.svg" alt="Safe and reliable" style="width: 350px; height: auto; float: right;"
+            class="mx-auto d-block1">
+          </div>
         </div>
+      </div>
     </div>
-
     <section class="use-cases">
-        <h2 class="section-title">E-commerce Use-Cases</h2>
-        <div class="slider-container">
-            <button class="slider-button left" onclick="scrollLeft()">&#10094;</button>
-            <div class="use-case-container">
-                <div class="use-case-card">
-                    <h3>Consumenten elektronica</h3>
-                    <!-- <img src="img/bright-1847006_1280.jpg" alt="Use case logistiek"> -->
-                    <p>Helpt klanten bij het kiezen van de juiste elektronica op basis van specificaties, compatibiliteit en persoonlijke voorkeuren.</p>
-                </div>
-                <div class="use-case-card">
-                    <h3>Sport & fitness</h3>
-                    <!-- <img src="img/fitness-3439343_1280.jpg" alt="Use case Ecommerce"> -->
-                    <p>Begeleidt klanten naar de beste sportuitrusting op basis van hun doelen, lichaamsbouw en trainingsstijl.</p>
-                </div>
-                <div class="use-case-card">
-                    <h3>Woonaccessoires & meubels</h3>
-                    <!-- <img src="img/room-1336497_1280.jpg" alt="Use case Klantenservice"> -->
-                    <p>Ondersteunt klanten bij het vinden van de perfecte inrichting op basis van stijl, afmetingen en functionaliteit.</p>
-                </div>
-                
-                <div class="use-case-card">
-                    <h3>Supplementen & Voeding</h3>
-                    <!-- <img src="img/medicine-6392470_1280.jpg" alt="Use case Klantenservice"> -->
-                    <p>Laat klanten het juiste supplement vinden op basis van hun symptomen of gezondheidsdoelen.</p>
-                </div>
-                
-                <!-- Voeg hier meer kaarten toe -->
-            </div>
-            <button class="slider-button right" onclick="scrollNext()">&#10095;</button>
+      <h2 class="section-title">
+        E-commerce Use-Cases
+      </h2>
+      <div class="slider-container">
+        <button class="slider-button left" onclick="scrollLeft()">
+          &#10094;
+        </button>
+        <div class="use-case-container">
+          <div class="use-case-card">
+            <h3>
+              Consumenten elektronica
+            </h3>
+            <!-- <img src="img/bright-1847006_1280.jpg" alt="Use case logistiek"> -->
+            <p>
+              Helpt klanten bij het kiezen van de juiste elektronica op basis van specificaties,
+              compatibiliteit en persoonlijke voorkeuren.
+            </p>
+          </div>
+          <div class="use-case-card">
+            <h3>
+              Sport & fitness
+            </h3>
+            <!-- <img src="img/fitness-3439343_1280.jpg" alt="Use case Ecommerce"> -->
+            <p>
+              Begeleidt klanten naar de beste sportuitrusting op basis van hun doelen,
+              lichaamsbouw en trainingsstijl.
+            </p>
+          </div>
+          <div class="use-case-card">
+            <h3>
+              Woonaccessoires & meubels
+            </h3>
+            <!-- <img src="img/room-1336497_1280.jpg" alt="Use case Klantenservice"> -->
+            <p>
+              Ondersteunt klanten bij het vinden van de perfecte inrichting op basis
+              van stijl, afmetingen en functionaliteit.
+            </p>
+          </div>
+          <div class="use-case-card">
+            <h3>
+              Supplementen & Voeding
+            </h3>
+            <!-- <img src="img/medicine-6392470_1280.jpg" alt="Use case Klantenservice"> -->
+            <p>
+              Laat klanten het juiste supplement vinden op basis van hun symptomen of
+              gezondheidsdoelen.
+            </p>
+          </div>
+          <!-- Voeg hier meer kaarten toe -->
         </div>
+        <button class="slider-button right" onclick="scrollNext()">
+          &#10095;
+        </button>
+      </div>
     </section>
-    
     <!-- <div class="jumbotron jumbotron-fluid feature" id="feature-last">
-        <div class="container">
-            <div class="row justify-content-between text-center text-md-left">
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
-                    <h2 class="font-weight-bold">ROI binnen een jaar</h2>
-                    <p class="my-4">
-                        Bespaar kosten en tijd, verhoog je ROI
-
-                        Een AI-chatbot automatiseert klantvragen en repetitieve taken, bespaart tot 75% op operationele kosten en verhoogt efficiëntie. 
-                        Snellere service, minder personeelslasten en meer focus op strategische groei – voor een slimmere en winstgevendere bedrijfsvoering.
-                        </p>
-                    <a href="https://calendly.com/fesi-demo/demo" class="btn my-4 font-weight-bold atlas-cta cta-blue" target="_blank">Bereken nu je ROI</a>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
-                    <img src="img/recomm.png" alt="Safe and reliable" class="mx-auto d-block1">
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- contact -->
-    <!-- <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/newbannerfesi.png);"> -->
-    <div class="jumbotron jumbotron-fluid" id="contact" style="background: #ffffff;">
-        <div class="container my-5">
-            <div class="row justify-content-between">
-                <div class="col-md-6 text-white">
-                    <h2 class="font-weight-bold">Neem contact met ons op</h2>
-                    <p class="my-4">
-                        Heb je vragen of hulp nodig? We zijn er voor je! <br>
-                        Vul het onderstaande formulier in, en wij nemen zo snel mogelijk contact met je op.
-                    </p>
-                    <ul class="list-unstyled">
-                        Of stuur ons een email::<br>
-                        <li>Email : <a href="mailto:info@fesi-ai.com">info@fesi-ai.com</a> </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <!-- Contact formulier -->
-                    <form method="POST" id="form">
-                    	<div class="row">
-	                        <div class="form-group col-md-6">
-	                            <!-- <label for="name">naam:</label> -->
-	                            <input name="Name" type="naam" class="form-control" id="naam" placeholder="Name*" required maxlength="50">
-	                        </div>
-	                        <div class="form-group col-md-6">
-	                            <!-- <label for="Email">email:</label> -->
-	                            <input name="Email" type="email" class="form-control" id="email" placeholder="Company email*" required maxlength="100">
-	                        </div>
-                            <div class="form-group col-md-6">
-	                            <!-- <label for="bedrijfsnaam">Bedrijfsnaam:</label> -->
-	                            <input name="bedrijfsnaam" type="bedrijfsnaam" class="form-control" id="bedrijfsnaam" placeholder="Company name*" required maxlength="50">
-	                        </div>
-                            <div class="form-group col-md-6">
-	                            <!-- <label for="telefoonnummer">Telefoonnummer:</label> -->
-	                            <input name="telefoonnummer" class="form-control" id="telefoonnummer" placeholder="Phone number*" required maxlength="17">
-	                        </div>
-	                    </div>
-	                    <div class="form-group">
-	                        <!-- <label for="message">Bericht:</label> -->
-	                        <textarea name="Bericht" class="form-control" id="bericht" rows="6" placeholder="Message* (max 400 tokens)" required maxlength="400"></textarea>
-	                    </div>
-                        <button type="submit" id="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-	<!-- copyright -->
-	<div class="jumbotron jumbotron-fluid" id="copyright">
-        <div class="container">
-            <div class="row justify-content-between">
-            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
-                    © 2025 Fesi.Ai |
-                    <a href="#PrivacyVerklaring" class="lnk">
-                        Privacy statement
-                    </a>
-                    |
-                    <a href="#AlgemeneVoorwaarde" class="lnk">
-                        Terms and condition
-                    </a>
-                </div>
-                
-                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
-                    <a href="https://www.facebook.com/profile.php?id=61553250240547" target="_blank" class="d-inline-block text-center ml-2" aria-label="Facebook">
-                    	<i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    </a> 
-                    <!-- <a href="https://www.instagram.com/" target="_blank" class="d-inline-block text-center ml-2" aria-label="Instagram">
-                    	<i class="fa fa-instagram" aria-hidden="true"></i> -->
-                    </a>
-                    <a href="https://www.linkedin.com/company/fesi-ai" target="_blank" class="d-inline-block text-center ml-2" aria-label="Linkedin">
-                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+    <div class="row justify-content-between text-center text-md-left">
+    <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
+    <h2 class="font-weight-bold">ROI binnen een jaar</h2>
+    <p class="my-4">
+    Bespaar kosten en tijd, verhoog je ROI
+    Een AI-chatbot automatiseert klantvragen en repetitieve taken, bespaart tot 75% op operationele kosten en verhoogt efficiëntie. 
+    Snellere service, minder personeelslasten en meer focus op strategische groei – voor een slimmere en winstgevendere bedrijfsvoering.
+    </p>
+    <a href="https://calendly.com/fesi-demo/demo" class="btn my-4 font-weight-bold atlas-cta cta-blue" target="_blank">Bereken nu je ROI</a>
     </div>
-</div>
-    
-
-
-
+    <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
+    <img src="img/recomm.png" alt="Safe and reliable" class="mx-auto d-block1">
+    </div>
+    </div>
+    </div>
+    </div> -->
+    <!-- contact -->
+    <!-- <div class="jumbotron jumbotron-fluid" id="contact" style="background-image:
+    url(img/newbannerfesi.png);"> -->
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background: #ffffff;">
+      <div class="container my-5">
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-white">
+            <h2 class="font-weight-bold">
+              Neem contact met ons op
+            </h2>
+            <p class="my-4">
+              Heb je vragen of hulp nodig? We zijn er voor je!
+              <br>
+              Vul het onderstaande formulier in, en wij nemen zo snel mogelijk contact
+              met je op.
+            </p>
+            <ul class="list-unstyled">
+              Of stuur ons een email::
+              <br>
+              <li>
+                Email :
+                <a href="mailto:info@fesi-ai.com">
+                  info@fesi-ai.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <!-- Contact formulier -->
+            <form method="POST" id="form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <!-- <label for="name">naam:</label> -->
+                  <input name="Name" type="naam" class="form-control" id="naam" placeholder="Name*"
+                  required maxlength="50">
+                </div>
+                <div class="form-group col-md-6">
+                  <!-- <label for="Email">email:</label> -->
+                  <input name="Email" type="email" class="form-control" id="email" placeholder="Company email*"
+                  required maxlength="100">
+                </div>
+                <div class="form-group col-md-6">
+                  <!-- <label for="bedrijfsnaam">Bedrijfsnaam:</label> -->
+                  <input name="bedrijfsnaam" type="bedrijfsnaam" class="form-control" id="bedrijfsnaam"
+                  placeholder="Company name*" required maxlength="50">
+                </div>
+                <div class="form-group col-md-6">
+                  <!-- <label for="telefoonnummer">Telefoonnummer:</label> -->
+                  <input name="telefoonnummer" class="form-control" id="telefoonnummer"
+                  placeholder="Phone number*" required maxlength="17">
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- <label for="message">Bericht:</label> -->
+                <textarea name="Bericht" class="form-control" id="bericht" rows="6" placeholder="Message* (max 400 tokens)"
+                required maxlength="400">
+                </textarea>
+              </div>
+              <button type="submit" id="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+              © 2025 Fesi.Ai |
+              <a href="#PrivacyVerklaring" class="lnk">
+                Privacy statement
+              </a>
+              |
+              <a href="#AlgemeneVoorwaarde" class="lnk">
+                Terms and condition
+              </a>
+            </div>
+            <div class="col-md-6 align-self-center text-center text-md-right my-2"
+            id="social-media">
+              <a href="https://www.facebook.com/profile.php?id=61553250240547" target="_blank"
+              class="d-inline-block text-center ml-2" aria-label="Facebook">
+                <i class="fa fa-facebook" aria-hidden="true">
+                </i>
+              </a>
+              <!-- <a href="https://www.instagram.com/" target="_blank" class="d-inline-block
+              text-center ml-2" aria-label="Instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i> -->
+              <a href="https://www.linkedin.com/company/fesi-ai" target="_blank" class="d-inline-block text-center ml-2"
+              aria-label="Linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true">
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Scripts -->
-    <script src="js/aos.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/swipe.js"></script>
-
-    <script>
-      AOS.init({
-      });
+    <script src="js/aos.js">
     </script>
-</body>
+    <script src="js/contact.js">
+    </script>
+    <script src="js/swipe.js">
+    </script>
+    <script src="js/hamburger.js">
+    </script>
+    <script>
+      AOS.init({});
+    </script>
+  </body>
+
 </html>

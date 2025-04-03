@@ -79,7 +79,7 @@
   margin: 0;
   padding: 0;
   z-index: 10;
-  background-color: transparent; /* Verwijder de achtergrondkleur */
+  background-color: #ffff; /* Verwijder de achtergrondkleur */
 }
 
 .dropdown-menu li {
@@ -122,4 +122,110 @@
 /* Dropdown-menu styling */
 .nav-links li.dropdown:hover .dropdown-menu {
   display: block;
+}
+/* Standaard navigatie (desktop) */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+/* Verberg hamburger en overlay standaard */
+.hamburger,
+#overlay {
+  display: none;
+}
+
+/* Mobiele weergave */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Verberg normale navigatie */
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* Overlay stijlen */
+/* Overlay moet alles bedekken */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  z-index: 1000; /* Zorgt dat overlay boven alles staat */
+}
+/* Zorg dat het logo altijd zichtbaar is in de overlay */
+#overlay .logo {
+  position: absolute;
+  top: 20px; /* Zelfde positie als in de header */
+  left: 20px;
+  width: 150px; /* Pas aan naar wens */
+  z-index: 1001; /* Zorgt dat het logo boven de overlay blijft */
+  display: block;
+}
+
+
+/* Als menu actief is, verberg dan de rest van de pagina */
+body.menu-open {
+  overflow: hidden; /* Voorkom scrollen */
+}
+
+/* Overlay wordt zichtbaar als de klasse 'active' wordt toegevoegd */
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Stijlen voor het menu */
+.overlay-menu {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.overlay-menu li {
+  margin: 20px 0;
+}
+
+.overlay-menu a {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* Sluitknop */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+/* Zorg dat het logo altijd zichtbaar is */
+.overlay .logo {
+  position: absolute;
+  top: 20px; /* Afstand vanaf boven */
+  left: 20px; /* Afstand vanaf links */
+  width: 150px; /* Pas aan naar jouw wens */
+  z-index: 1001;
+}
+/* Zorg dat er niet gescrolld kan worden als het menu open is */
+body.menu-open,
+html.menu-open {
+    overflow: hidden;
+    height: 100vh;
+}
+
 }

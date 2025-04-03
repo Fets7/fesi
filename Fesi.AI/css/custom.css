@@ -246,8 +246,9 @@ button {
     display: inline-flex;
     align-items: center;
     border: 3px solid #2900f5; /* Blauwe rand */
-    border-radius: 50px; /* Ovale vorm */
+    border-radius: 50px ; /* Ovale vorm */
     overflow: hidden;
+    background-color: white;
 }
 
 .cta input[type="email"] {
@@ -268,7 +269,7 @@ button {
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 0 50px 50px 0;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -284,7 +285,7 @@ button {
     font-weight: bold;
     color: black;
     text-decoration: none;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 50px;
     margin-left: 10px;
     transition: all 0.3s ease;
@@ -433,12 +434,13 @@ button {
     }
     .logo {
         height: auto;
-        width: auto;
+        width: 75%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }
+    }    
 }
+
 /* @media (min-width: 767px) {
     img.mx-auto.d-block1 {
         display: none !important;
