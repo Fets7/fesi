@@ -4,31 +4,32 @@ function scrollNext() {
     const container = document.querySelector('.use-case-container');
     const cardWidth = document.querySelector('.use-case-card').offsetWidth;
     const gap = 20; // Dezelfde waarde als in de CSS
+    const maxIndex = document.querySelectorAll('.use-case-card').length;
+
     currentIndex++;
-    const maxIndex = container.children.length - 1;
-    
-    if (currentIndex > maxIndex) {
-        currentIndex = 0; // Ga terug naar de eerste kaart
+    if (currentIndex >= maxIndex) {
+        currentIndex = 0; // Loopt weer naar de eerste kaart als het einde is bereikt
     }
-    
+
     const scrollAmount = (cardWidth + gap) * currentIndex;
+    container.style.transition = "transform 0.5s ease"; // Voeg een overgang toe
     container.style.transform = `translateX(-${scrollAmount}px)`;
-    checkButtonVisibility();
 }
 
-function scrollLeft() {
+function scrollBack() {
     const container = document.querySelector('.use-case-container');
     const cardWidth = document.querySelector('.use-case-card').offsetWidth;
     const gap = 20; // Dezelfde waarde als in de CSS
+    const maxIndex = document.querySelectorAll('.use-case-card').length;
+
     currentIndex--;
-    
     if (currentIndex < 0) {
-        currentIndex = container.children.length - 1; // Ga naar de laatste kaart
+        currentIndex = maxIndex - 1; // Loopt weer naar de laatste kaart als het begin is bereikt
     }
-    
+
     const scrollAmount = (cardWidth + gap) * currentIndex;
+    container.style.transition = "transform 0.5s ease"; // Voeg een overgang toe
     container.style.transform = `translateX(-${scrollAmount}px)`;
-    checkButtonVisibility();
 }
 
 function checkButtonVisibility() {
@@ -38,6 +39,7 @@ function checkButtonVisibility() {
     const leftButton = document.querySelector('.slider-button.left');
     const rightButton = document.querySelector('.slider-button.right');
     
+    // Verberg de knoppen als er geen ruimte meer is om te scrollen
     if (contentWidth > containerWidth) {
         rightButton.style.display = 'block';
         leftButton.style.display = 'block';
@@ -47,6 +49,6 @@ function checkButtonVisibility() {
     }
 }
 
-// Controleer de zichtbaarheid van de knoppen bij het laden van de pagina en bij het aanpassen van de grootte van het venster
+// Zorg ervoor dat de slider goed werkt bij het laden van de pagina
 window.addEventListener('load', checkButtonVisibility);
 window.addEventListener('resize', checkButtonVisibility);

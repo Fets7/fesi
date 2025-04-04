@@ -26,23 +26,42 @@
         <!-- Navigatie -->
         <div class="container text-center text-md-left">
             <header>
-                <div data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="navigatie">
-                    <img class="logo" src="img/Fesi Logo Full.png" alt="logo"> 
-                    <ul class="nav-links">
-                        <li class="center"><a href="index.html">Home</a></li>
-                        <li class="center dropdown">
-                            <a>Oplossingen <i class="fa fa-chevron-down dropdown-arrow"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="klantenservice.html">Klantenservice</a></li>
-                                <li><a href="verkoop.html">Verkoop</a></li>
-                                <li><a href="marketing.html">Marketing</a></li>
-                            </ul>
-                        </li>
-                        <li class="center"><a href="onze_missie.html">Onze Missie</a></li>
-                        <li class="center"><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="navigatie">
+                  <img class="logo" src="img/Fesi Logo Full.png" alt="logo">
+                  
+                  <!-- Normale navigatie (voor desktop) -->
+                  <ul class="nav-links">
+                    <li class="center"><a href="index.html">Home</a></li>
+                    <li class="center dropdown">
+                      <a href="#">Oplossingen <i class="fa fa-chevron-down dropdown-arrow"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="klantenservice.html">Klantenservice</a></li>
+                        <li><a href="verkoop.html">Verkoop</a></li>
+                        <li><a href="marketing.html">Marketing</a></li>
+                      </ul>
+                    </li>
+                    <li class="center"><a href="onze_missie.html">Onze Missie</a></li>
+                    <li class="center"><a href="#contact">Contact</a></li>
+                  </ul>
+              
+                  <!-- Hamburger menu (alleen mobiel) -->
+                  <div class="hamburger" onclick="toggleMenu()">☰</div>
                 </div>
-            </header>
+              </header>
+              
+              <!-- Overlay Menu (alleen mobiel) -->
+              <div id="overlay">
+                <!-- <img class="logo" src="img/Fesi Logo Full.png" alt="logo"> -->
+                <ul class="overlay-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="klantenservice.html">Klantenservice</a></li>
+                  <li><a href="verkoop.html">Verkoop</a></li>
+                  <li><a href="marketing.html">Marketing</a></li>
+                  <li><a href="onze_missie.html">Onze Missie</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="close-btn" onclick="toggleMenu()">×</div>
+              </div>
             <br>
             <br>
             <div class="jumbotron jumbotron-fluid feature" id="feature-first1">
@@ -194,7 +213,8 @@
     <!-- Scripts -->
     <script src="js/aos.js"></script>
     <script src="js/contact.js"></script>
-
+    <script src="js/hamburger.js">
+    </script>
     <script>
       AOS.init({
       });
