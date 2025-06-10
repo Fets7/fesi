@@ -1,0 +1,507 @@
+/********** common setting **********/
+body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #eceefe;
+}
+.txtgrdnt {
+    background: -webkit-linear-gradient(#2900f5, #2900f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1 {
+    font-size: 2.5rem !important;
+    font-weight: 900 !important;
+}
+h2 {
+    font-size: 2rem !important;
+    font-weight: 900;
+}
+h3{  
+    font-size: 1.5rem !important;
+    font-weight: 900;
+    /* color: #ffffff !important; */
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+video {
+    max-width: 80%;
+    float: left;
+    /* box-shadow: 0 0px 100px rgba(8, 5, 187, 0.2); */
+
+}
+.logo {
+    height: 38%;
+    width: 38%;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.atlas-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-green {
+    background: #2900f5;
+    color: #ffffff;
+}
+
+.cta-green:hover {
+    color: #ffffff;
+    background: #031684;
+
+}
+
+.cta-blue {
+
+    background: #2900f5;
+    color: #ffffff;
+}
+
+.cta-blue:hover {
+    /* color: #ffffff;
+    background: #121a2e; */
+    color: #ffffff;
+    background: #2900f5;
+
+}
+
+.cta-ghost {
+    border: 2px solid #192440 !important;
+    color: #192440;
+}
+
+.cta-ghost:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+.arrow-container {
+    position: relative;
+    text-align: left; /* Zorgt voor centrering */
+    margin-top: 0px;  /* Ruimte boven de pijl */
+}
+
+.arrow {
+    width: 250px; /* Pas de grootte van de pijl aan */
+    height: auto;
+    position: absolute;
+    left: 12%; /* Pijl centreren */
+}
+
+.dropdown-arrow {
+    font-size: 0.8em;  /* Kleinere grootte */
+    color: #555;      /* Lichtere kleur voor subtiel effect */
+    margin-left: 5px;  /* Ruimte tussen tekst en pijltje */
+    transition: color 0.3s ease;  /* Zachte overgang voor kleurverandering */
+}
+
+.dropdown:hover .dropdown-arrow {
+    color: #333;  /* Donkere kleur bij hover */
+}
+
+
+#banner {
+    background-size: cover !important; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    height: auto; /* Zorgt ervoor dat de hoogte alleen zo groot is als de inhoud */
+    width: 100%;
+    padding: 50px 0; /* Voegt wat ruimte toe binnen de div, pas aan indien nodig */
+    margin-bottom: 40px;
+}
+/********** feature (skew background) **********/
+.feature img {
+    margin-left: 0!important;
+}
+
+#feature-first {
+    background: #ffffff;
+}
+#feature-first1 {
+    background: #ffffff;
+
+}
+#feature-last {
+    background: #ffffff;
+
+}
+#feature-last1 {
+    background: #ffffff;
+}
+
+#onzeMissie {
+    background: #ffffff;
+}
+/********** price table **********/
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#price-table__premium {
+    background: #192440;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+/********** contact **********/
+#contact {
+    background-size: cover;
+    background-color: #7c7c7c; 
+    margin-top: 3rem;
+}
+
+#contact ul li {
+    padding: 3px 0;
+}
+
+#contact form {
+    color: #ffffff;
+}
+
+#contact form input,
+#contact form textarea {
+    background: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+/********** copyright **********/
+#copyright {
+    background: transparent;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #2900f5;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #4840bb;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+/* Over ons */
+.overons {
+    text-align: center;
+}
+.lnk {
+    color: rgb(0, 0, 0);
+}
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+.checklist li {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+.checklist li::before {
+    content: '✔';
+    color: #2900f5;
+    margin-right: 10px;
+}
+.cta {
+    text-align: left;
+}
+
+.cta form {
+    display: inline-flex;
+    align-items: center;
+    border: 3px solid #2900f5; /* Blauwe rand */
+    border-radius: 50px ; /* Ovale vorm */
+    overflow: hidden;
+    background-color: white;
+}
+
+.cta input[type="email"] {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+}
+
+.cta button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #2900f5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: darkblue;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.cta p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+    text-align: left;
+    margin-left: 20px; /* Pas dit aan voor de gewenste afstand */
+}
+
+.use-cases {
+    text-align: center;
+    padding: 100px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;           /* verberg alles buiten de viewport */
+    width: 100%;
+  }
+  
+  :root {
+    --uc-gap: 40px; /* nieuwe gap */
+  }
+
+  .use-case-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: var(--uc-gap);
+    /* padding-left/right wordt via JS ingesteld voor centering */
+  }
+  
+  .use-case-card {
+    flex: 0 0 auto;
+    width: 80vw;                /* mobielvriendelijk, max 300px */
+    max-width: 300px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+
+.use-case-card:hover {
+    transform: translateY(-5px);
+}
+
+.use-case-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.use-case-card img {
+    max-width: 100%;
+    height: 200px; /* Vaste hoogte voor de afbeeldingen */
+    object-fit: cover; /* Afbeelding bijsnijden om te passen */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.use-case-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    flex-grow: 1; /* Zorgt ervoor dat de paragrafen zich uitstrekken om de kaarten gelijkmatig te maken */
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2900f5;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;              /* verschijnt via JS als nodig */
+  }
+
+.slider-button.left {
+    left: 10px; /* Zorg ervoor dat de knop niet helemaal aan de rand zit */
+}
+
+.slider-button.right {
+    right: 10px; /* Zorg ervoor dat de knop niet helemaal aan de rand zit */
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.solution-block {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/********** RWD **********/
+@media (max-width: 1000px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+    #banner {
+        background-position: 25%;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    .logo {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        /* margin-left: auto; */
+        margin-right: auto;
+    }
+    .feature img {
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    html, video {
+        float: none;
+    }
+}
+@media (max-width: 767px) {
+    video.mx-auto.d-block {
+        display: none !important;
+    }
+    .logo {
+        height: auto;
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    h1.display-3.text-white.font-weight-bold.my-5 {
+        font-size: 2rem !important;
+        line-height: 1.3;
+        margin: 2rem 1rem;
+}
+h3[style*="color: #000000"] {
+    font-size: 1.2rem !important;
+    line-height: 1.5;
+  }
+    .cta {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .cta input {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.6rem;
+      margin-bottom: 0.8rem;
+    }
+  
+    .cta button {
+      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+    }
+  
+    .cta a,
+    .cta p {
+      font-size: 0.9rem;
+    }
+    .cta a {
+        display: none;
+      }
+      .d-flex {
+        flex-direction: column !important;
+        align-items: flex-start !important; /* Zorgt dat de button links uitlijnt */
+        gap: 10px; /* optioneel: wat ruimte tussen tekst en knop */
+      }
+    
+      .d-flex h2 {
+        margin-bottom: 0.5rem;
+      }
+    
+      .d-flex a {
+        width: 100%; /* optioneel: knop over hele breedte */
+      }
+      .d-block1 {
+    float: none !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 80% !important; /* pas aan indien nodig */
+    max-width: 300px;
+  }
+  
+  }
+  
+/* @media (min-width: 767px) {
+    img.mx-auto.d-block1 {
+        display: none !important;
+    }
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+
+

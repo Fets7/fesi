@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>Fesi-AI</title>
+    <meta name="description" content="Fesi.AI revolutionizes e-commerce by boosting sales with personalized advice and support, enhancing operational efficiency through automation, and eliminating waiting times for optimal customer satisfaction.">
+    <link rel="icon" href="img/LogoWithoutText.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- navbar -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+
+</head>
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" >
+
+        <!-- Navigatie -->
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="navigatie">
+                  <img class="logo" src="img/Fesi Logo Full.png" alt="logo">
+                  
+                  <!-- Normale navigatie (voor desktop) -->
+                  <ul class="nav-links">
+                    <li class="center"><a href="index.html">Home</a></li>
+                    <li class="center dropdown">
+                      <a href="#">Oplossingen <i class="fa fa-chevron-down dropdown-arrow"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="klantenservice.html">Klantenservice</a></li>
+                        <li><a href="verkoop.html">Verkoop</a></li>
+                        <li><a href="marketing.html">Marketing</a></li>
+                      </ul>
+                    </li>
+                    <li class="center"><a href="onze_missie.html">Onze Missie</a></li>
+                    <li class="center"><a href="#contact">Contact</a></li>
+                  </ul>
+              
+                  <!-- Hamburger menu (alleen mobiel) -->
+                  <div class="hamburger" onclick="toggleMenu()">☰</div>
+                </div>
+              </header>
+              
+              <!-- Overlay Menu (alleen mobiel) -->
+              <div id="overlay">
+                <!-- <img class="logo" src="img/Fesi Logo Full.png" alt="logo"> -->
+                <ul class="overlay-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="klantenservice.html">Klantenservice</a></li>
+                  <li><a href="verkoop.html">Verkoop</a></li>
+                  <li><a href="marketing.html">Marketing</a></li>
+                  <li><a href="onze_missie.html">Onze Missie</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="close-btn" onclick="toggleMenu()">×</div>
+              </div>
+            <br>
+            <br>
+            <div class="jumbotron jumbotron-fluid feature" id="feature-first1">
+                <div class="container my-5">
+                    <div class="row justify-content-between text-center text-md-left">
+                        <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+                            <h2 class="font-weight-bold">Maak je marketing slimmer met AI</h2>
+                            <p class="my-4">
+                                Breng je campagnes tot leven met een AI-Klantadviseur die meer doet dan alleen reageren — hij denkt mee, 
+                                speelt in op interesses en stuurt content aan die écht converteert. Of het nu gaat om persoonlijke aanbevelingen, 
+                                realtime klantinzichten of actiegerichte communicatie: met AI verhoog je betrokkenheid, loyaliteit én resultaat. 
+                                Slimme marketing begint hier. 
+                                 </p><br>
+                                <a href="#contact" class="btn my-4 font-weight-bold atlas-cta cta-blue" >Plan een gratis demo</a>
+                            </div>
+                        <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
+                            <img src="img/marketing-2-9.svg" alt="Safe and reliable" style="width: 350px; height: auto; float: right;" class="mx-auto d-block1">  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+
+    
+    <div class="container mt-5 text-overlay-container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="font-weight-bold">Marketing</h2>
+            <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue" >
+                Ontdek de mogelijkheden
+            </a>   
+        </div>
+        <br><br>
+        <div class="row mt-4">
+            <div class="col-md-6 d-flex">
+                <i class="fa fa-file-text-o fa-2x mr-3"></i>
+                <div>
+                    <b>Interactie met content</b>
+                    <br><br>
+                    Laat je content tot leven komen! Een AI-Klantadviseur kan blogs, video's of andere content actief aanbevelen aan klanten, afhankelijk van hun interesses. Zo zorg je ervoor dat klanten de waardevolle informatie ontdekken die hen verder overtuigt om actie te ondernemen.
+                </div>
+            </div>
+            <div class="col-md-6 d-flex">
+                <i class="fa fa-bullseye fa-2x mr-3"></i>
+                <div>
+                    <b>Conversiegerichte campagnes</b>
+                    <br><br>
+                    Een AI-Klantadviseur kan direct klanten aanspreken en begeleiden tijdens marketingcampagnes. Of het nu gaat om een tijdelijke actie, een nieuw product of een exclusieve deal, de Klantadviseur zorgt ervoor dat de boodschap effectief overkomt en verhoogt de kans op conversie.
+                </div>
+            </div>
+        </div>
+    
+        <div class="row mt-4">
+            <div class="col-md-6 d-flex">
+                <i class="fa fa-users fa-2x mr-3"></i>
+                <div>
+                    <b>Persoonlijke betrokkenheid</b>
+                    <br><br>
+                    Een AI-Klantadviseur creëert een interactieve en persoonlijke ervaring door in te spelen op de behoeften en interesses van elke klant. Door gerichte gesprekken en proactieve suggesties voelt de klant zich gehoord en gewaardeerd, wat de merktrouw en betrokkenheid versterkt.
+                </div>
+            </div>
+            <div class="col-md-6 d-flex">
+                <i class="fa fa-line-chart fa-2x mr-3"></i>
+                <div>
+                    <b>Realtime klantinzichten</b>
+                    <br><br>
+                    Elke interactie met de Klantadviseur biedt waardevolle gegevens over klantgedrag, voorkeuren en trends. Deze inzichten kun je gebruiken om je marketingstrategieën te verfijnen en campagnes nog gerichter en succesvoller te maken.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background: #ffffff;">
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white">
+                    <h2 class="font-weight-bold">Neem contact met ons op</h2>
+                    <p class="my-4">
+                        Heb je vragen of hulp nodig? We zijn er voor je! <br>
+                        Vul het onderstaande formulier in, en wij nemen zo snel mogelijk contact met je op.
+                    </p>
+                    <ul class="list-unstyled">
+                        Of stuur ons een email::<br>
+                        <li>Email : <a href="mailto:info@fesi-ai.com">info@fesi-ai.com</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <!-- Contact formulier -->
+                    <form method="POST" id="form">
+                    	<div class="row">
+	                        <div class="form-group col-md-6">
+	                            <!-- <label for="name">naam:</label> -->
+	                            <input name="Name" type="naam" class="form-control" id="naam" placeholder="Name*" required maxlength="50">
+	                        </div>
+	                        <div class="form-group col-md-6">
+	                            <!-- <label for="Email">email:</label> -->
+	                            <input name="Email" type="email" class="form-control" id="email" placeholder="Company email*" required maxlength="100">
+	                        </div>
+                            <div class="form-group col-md-6">
+	                            <!-- <label for="bedrijfsnaam">Bedrijfsnaam:</label> -->
+	                            <input name="bedrijfsnaam" type="bedrijfsnaam" class="form-control" id="bedrijfsnaam" placeholder="Company name*" required maxlength="50">
+	                        </div>
+                            <div class="form-group col-md-6">
+	                            <!-- <label for="telefoonnummer">Telefoonnummer:</label> -->
+	                            <input name="telefoonnummer" class="form-control" id="telefoonnummer" placeholder="Phone number*" required maxlength="17">
+	                        </div>
+	                    </div>
+	                    <div class="form-group">
+	                        <!-- <label for="message">Bericht:</label> -->
+	                        <textarea name="Bericht" class="form-control" id="bericht" rows="6" placeholder="Message* (max 400 tokens)" required maxlength="400"></textarea>
+	                    </div>
+                        <button type="submit" id="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+	<!-- copyright -->
+	<div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+              © 2025 Fesi.Ai |
+              <a href="#PrivacyVerklaring" class="lnk">
+                Privacy statement
+              </a>
+              |
+              <a href="#AlgemeneVoorwaarde" class="lnk">
+                Terms and condition
+              </a>
+            </div>
+            <div class="col-md-6 align-self-center text-center text-md-right my-2"
+            id="social-media">
+              Opgericht in NL | 
+              <a href="https://www.facebook.com/profile.php?id=61553250240547" 
+              class="d-inline-block text-center ml-2" aria-label="Facebook">
+                <i class="fa fa-facebook" aria-hidden="true">
+                </i>
+              </a>
+              <!-- <a href="https://www.instagram.com/"  class="d-inline-block
+              text-center ml-2" aria-label="Instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i> -->
+              <a href="https://www.linkedin.com/company/fesi-ai"  class="d-inline-block text-center ml-2"
+              aria-label="Linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true">
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+    
+    <!-- Scripts -->
+    <script src="js/aos.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/hamburger.js">
+    </script>
+    <script>
+      AOS.init({
+      });
+    </script>
+</body>
+</html>
