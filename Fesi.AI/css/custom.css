@@ -172,7 +172,7 @@ button {
 #contact {
     background-size: cover;
     background-color: #7c7c7c; 
-    margin-top: 10rem;
+    margin-top: 3rem;
 }
 
 #contact ul li {
@@ -307,45 +307,44 @@ button {
 
 .use-cases {
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
     font-family: Arial, sans-serif;
-}
-
-.section-title {
+  }
+  
+  .section-title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 40px;
-}
-
-.slider-container {
+  }
+  
+  .slider-container {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Zorgt ervoor dat de kaarten in het midden staan */
-    overflow: hidden; /* Verberg de horizontale scrollbalk */
-}
+    overflow: hidden;           /* verberg alles buiten de viewport */
+    width: 100%;
+  }
+  
+  :root {
+    --uc-gap: 40px; /* nieuwe gap */
+  }
 
-.use-case-container {
+  .use-case-container {
     display: flex;
-    justify-content: center; /* Zorgt ervoor dat de kaarten in het midden staan */
-    transition: transform 0.3s ease; /* Animatie voor het scrollen */
-    gap: 20px; /* Ruimte tussen de kaarten */
-}
-
-.use-case-card {
+    transition: transform 0.5s ease;
+    gap: var(--uc-gap);
+    /* padding-left/right wordt via JS ingesteld voor centering */
+  }
+  
+  .use-case-card {
     flex: 0 0 auto;
-    display: flex;
-    flex-direction: column; /* Inhoud verticaal centreren */
-    justify-content: space-between; /* Ruimte tussen de elementen */
-    width: 300px;
+    width: 80vw;                /* mobielvriendelijk, max 300px */
+    max-width: 300px;
     padding: 20px;
     border: 2px solid #000;
     border-radius: 10px;
     text-align: center;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    margin: 2%;
-}
+    margin: 20px 0;
+  }
 
 .use-case-card:hover {
     transform: translateY(-5px);
@@ -376,14 +375,13 @@ button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* background-color: rgba(0, 0, 0, 0.5); */
     color: #2900f5;
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 10; /* Verhoog de z-index om ervoor te zorgen dat de knop bovenaan ligt */
-    display: none; /* Verberg de knop standaard */
-}
+    z-index: 10;
+    display: none;              /* verschijnt via JS als nodig */
+  }
 
 .slider-button.left {
     left: 10px; /* Zorg ervoor dat de knop niet helemaal aan de rand zit */
