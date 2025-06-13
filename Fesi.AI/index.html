@@ -96,9 +96,9 @@
               <br>
               <div data-aos="fade" data-aos-easing="linear" data-aos-duration="1000"
               data-aos-once="true" class="cta">
-                <form action="#contact">
-                  <!-- <input type="email" placeholder="Vul jouw email adres in" required> -->
-                  <button type="submit">
+                <form METHOD="POST" id="form">
+                  <input name="Email" type="email" placeholder="Vul jouw email adres in" required>
+                  <button type="submit" id="submit">
                     Neem contact met ons op
                   </button>
                 </form>
@@ -106,7 +106,7 @@
                   Zo werkt het
                 </a> -->
                 <p>
-                  Neem contact met ons op voor een gratis demo
+                  Laat je email achter en wij nemen contact met je op voor een gratis demo
                 </p>
               </div>
               
@@ -238,14 +238,35 @@
         <button class="slider-button left" onclick="scrollBack()">&#10094;</button> <!-- Functie gewijzigd naar scrollBack -->
         <div class="use-case-container">
           <div class="use-case-card">
+            <h3>Beautyproducten</h3><br>
+            <img src="img/usecase/beautyproduct.jpg" alt="Safe and reliable"
+            style="width: 450px; height: auto; float: left;" class="mx-auto d-block1">
+            <p>
+              Helpt klanten de juiste beautyproducten te kiezen op basis van huidtype, voorkeuren en doelen.
+            </p>
+          </div>
+          <div class="use-case-card">
+            <h3>Huishoudelijke apparaten</h3>
+            <img src="img/usecase/huishoudelijkeapparaten.jpg" alt="Safe and reliable"
+            style="width: 450px; height: auto; float: left;" class="mx-auto d-block1">
+            <p>
+              Zorgt dat klanten snel het juiste apparaat vinden op basis van energieverbruik, capaciteit en functies.
+            </p>
+          </div>
+          <div class="use-case-card">
+            
             <h3>Consumenten elektronica</h3>
+            <img src="img/usecase/consumerelectronic.jpg" alt="Safe and reliable"
+            style="width: 450px; height: auto; float: left;" class="mx-auto d-block1">
             <p>
               Helpt klanten bij het kiezen van de juiste elektronica op basis van specificaties,
               compatibiliteit en persoonlijke voorkeuren.
             </p>
           </div>
           <div class="use-case-card">
-            <h3>Sport & fitness</h3>
+            <h3>Sport & fitness</h3><br>
+            <img src="img/usecase/gym.jpg" alt="Safe and reliable"
+            style="width: 450px; height: auto; float: left;" class="mx-auto d-block1">
             <p>
               Begeleidt klanten naar de beste sportuitrusting op basis van hun doelen,
               lichaamsbouw en trainingsstijl.
@@ -253,40 +274,37 @@
           </div>
           <div class="use-case-card">
             <h3>Woonaccessoires & meubels</h3>
+            <img src="img/usecase/furniture.jpg" alt="Safe and reliable"
+            style="width: 450px; height: auto; float: left;" class="mx-auto d-block1">
             <p>
               Ondersteunt klanten bij het vinden van de perfecte inrichting op basis van stijl, afmetingen en functionaliteit.
             </p>
           </div>
           <div class="use-case-card">
             <h3>Supplementen & Voeding</h3>
+            <img src="img/usecase/foodsupplements.jpg" alt="Safe and reliable"
+            style="width: 450px; height: auto; float: left;" class="mx-auto d-block1">
             <p>
               Laat klanten het juiste supplement vinden op basis van hun symptomen of gezondheidsdoelen.
             </p>
           </div>
           <div class="use-case-card">
             <h3>Baby & kinderproducten</h3>
+            <img src="img/usecase/babyproduct.jpg" alt="Safe and reliable"
+            style="width: 450px; height: auto; float: left;" class="mx-auto d-block1">
             <p>
               Adviseert ouders over veilige en geschikte producten op basis van leeftijd, gebruiksgemak en kwaliteit.
             </p>
           </div>
           <div class="use-case-card">
-            <h3>Mode</h3>
+            <h3>Mode</h3><br>
+            <img src="img/usecase/fashion.jpg" alt="Safe and reliable"
+            style="width: 450px; height: auto; float: left;" class="mx-auto d-block1">
             <p>
               Ondersteunt klanten bij het vinden van de perfecte outfit op basis van stijl, kleur en maat.
             </p>
           </div>
-          <div class="use-case-card">
-            <h3>Beautyproducten</h3>
-            <p>
-              Helpt klanten de juiste beautyproducten te kiezen op basis van huidtype, voorkeuren en doelen.
-            </p>
-          </div>
-          <div class="use-case-card">
-            <h3>Huishoudelijke apparaten</h3>
-            <p>
-              Zorgt dat klanten snel het juiste apparaat vinden op basis van energieverbruik, capaciteit en functies.
-            </p>
-          </div>
+          
         </div>
         <button class="slider-button right" onclick="scrollNext()">&#10095;</button>
       </div>
@@ -410,12 +428,12 @@
           <div class="row justify-content-between">
             <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
               © 2025 Fesi.Ai |
-              <a href="#PrivacyVerklaring" class="lnk">
+              <!-- <a href="#PrivacyVerklaring" class="lnk">
                 Privacy statement
-              </a>
+              </a> -->
               |
-              <a href="#AlgemeneVoorwaarde" class="lnk">
-                Terms and condition
+              <a href="algemenevoorwaarden.html" class="lnk">
+                Algemene voorwaarden
               </a>
             </div>
             <div class="col-md-6 align-self-center text-center text-md-right my-2"
