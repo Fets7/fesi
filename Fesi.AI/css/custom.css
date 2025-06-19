@@ -447,9 +447,8 @@ h3[style*="color: #000000"] {
     line-height: 1.5;
   }
     .cta {
-      padding: 1rem;
-      text-align: center;
-    }
+    display: none !important;
+  }
   
     .cta input {
       width: 100%;

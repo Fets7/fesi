@@ -136,51 +136,68 @@
     </div>
 
     <div class="jumbotron jumbotron-fluid" id="contact" style="background: #ffffff;">
-        <div class="container my-5">
-            <div class="row justify-content-between">
-                <div class="col-md-6 text-white">
-                    <h2 class="font-weight-bold">Neem contact met ons op</h2>
-                    <p class="my-4">
-                        Heb je vragen of hulp nodig? We zijn er voor je! <br>
-                        Vul het onderstaande formulier in, en wij nemen zo snel mogelijk contact met je op.
-                    </p>
-                    <ul class="list-unstyled">
-                        Of stuur ons een email::<br>
-                        <li>Email : <a href="mailto:info@fesi-ai.com">info@fesi-ai.com</a> </li>
-                    </ul>
+      <div class="container my-5">
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-white">
+            <h2 class="font-weight-bold">
+              Neem contact met ons op
+            </h2>
+            <p class="my-4">
+              Heb je vragen of hulp nodig? We zijn er voor je!
+              <br>
+              Vul het onderstaande formulier in, en wij nemen zo snel mogelijk contact
+              met je op.
+            </p>
+            <ul class="list-unstyled">
+              Of stuur ons een email:
+              <br>
+              <li>
+                
+                <a href="mailto:info@fesi-ai.com">
+                  info@fesi-ai.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <!-- Contact formulier -->
+            <form method="POST" id="form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <!-- <label for="name">naam:</label> -->
+                  <input name="Name" type="naam" class="form-control" id="naam" placeholder="Naam*"
+                  required maxlength="50">
                 </div>
-                <div class="col-md-6">
-                    <!-- Contact formulier -->
-                    <form method="POST" id="form">
-                    	<div class="row">
-	                        <div class="form-group col-md-6">
-	                            <!-- <label for="name">naam:</label> -->
-	                            <input name="Name" type="naam" class="form-control" id="naam" placeholder="Name*" required maxlength="50">
-	                        </div>
-	                        <div class="form-group col-md-6">
-	                            <!-- <label for="Email">email:</label> -->
-	                            <input name="Email" type="email" class="form-control" id="email" placeholder="Company email*" required maxlength="100">
-	                        </div>
-                            <div class="form-group col-md-6">
-	                            <!-- <label for="bedrijfsnaam">Bedrijfsnaam:</label> -->
-	                            <input name="bedrijfsnaam" type="bedrijfsnaam" class="form-control" id="bedrijfsnaam" placeholder="Company name*" required maxlength="50">
-	                        </div>
-                            <div class="form-group col-md-6">
-	                            <!-- <label for="telefoonnummer">Telefoonnummer:</label> -->
-	                            <input name="telefoonnummer" class="form-control" id="telefoonnummer" placeholder="Phone number*" required maxlength="17">
-	                        </div>
-	                    </div>
-	                    <div class="form-group">
-	                        <!-- <label for="message">Bericht:</label> -->
-	                        <textarea name="Bericht" class="form-control" id="bericht" rows="6" placeholder="Message* (max 400 tokens)" required maxlength="400"></textarea>
-	                    </div>
-                        <button type="submit" id="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Send</button>
-                    </form>
+                <div class="form-group col-md-6">
+                  <!-- <label for="Email">email:</label> -->
+                  <input name="Email" type="email" class="form-control" id="email" placeholder="Email*"
+                  required maxlength="100">
                 </div>
-            </div>
+                <div class="form-group col-md-6">
+                  <!-- <label for="bedrijfsnaam">Bedrijfsnaam:</label> -->
+                  <input name="bedrijfsnaam" type="bedrijfsnaam" class="form-control" id="bedrijfsnaam"
+                  placeholder="Bedrijfsnaam*" required maxlength="50">
+                </div>
+                <div class="form-group col-md-6">
+                  <!-- <label for="telefoonnummer">Telefoonnummer:</label> -->
+                  <input name="telefoonnummer" class="form-control" id="telefoonnummer"
+                  placeholder="Telefoonnummer*" required maxlength="17">
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- <label for="message">Bericht:</label> -->
+                <textarea name="Bericht" class="form-control" id="bericht" rows="6" placeholder="Message* (max 400 tokens)"
+                required maxlength="400">
+                </textarea>
+              </div>
+              <button type="submit" id="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">
+                Verzenden
+              </button>
+            </form>
+          </div>
         </div>
-
-	<!-- copyright -->
+      </div>
+      <!-- copyright -->
       <div class="jumbotron jumbotron-fluid" id="copyright">
         <div class="container">
           <div class="row justify-content-between">
@@ -214,7 +231,7 @@
           </div>
         </div>
       </div>
-</div>
+    </div>
     
     <!-- Scripts -->
     <script src="js/aos.js"></script>
